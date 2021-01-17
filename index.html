@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Vinoli - Liquor Store</title>
+    <link rel="icon" type="image/x-icon" href="img/icono.ico" />
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/2f546a1745.js" crossorigin="anonymous"></script>
+</head>
+
+<body onload="animaciones()">
+    <header>
+        <!-- Menu desplegable del sitio -->
+        <nav>
+            <div id="icono-menu" class="icono-menu" onclick="abrirMenu()">
+                <div></div>
+            </div>
+            <div id="contenedor-menu" class="ocultar-contenedor">
+                <div id="menu" class="menu">
+                    <ul>
+                        <li><a href="">INICIO</a></li>
+                        <li><a href="#nosotros">NOSOTROS</a></li>
+                        <li><a href="#diferencia">¿QUÉ NOS <br> DIFERENCIA?</a></li>
+                        <li><a href="#contactanos">CONTÁCTANOS</a></li>
+                        <hr>
+                        <li class="telefono"><a href="tel:+18099083961">+1 (809)-908-3961</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Contenido de la cabecera -->
+        <div id="fondo-header1">
+            <div id="fondo-header2">
+                <div class="contenedor-texto-img">
+                    <!-- Slider de la cabecera -->
+                    <div class="contenedor-slider-header slider-desktop">
+                        <div id="contenedor-slider-nav">
+                            <div id="slider-nav-1" class="slider-nav">
+                                <div id="nav-select1" class="nav-activo"></div>
+                            </div>
+                            <div id="slider-nav-2" class="slider-nav">
+                                <div id="nav-select2"></div>
+                            </div>
+                            <div id="slider-nav-3" class="slider-nav">
+                                <div id="nav-select3"></div>
+                            </div>
+                        </div>
+                        <div id="contenedor-slider-img">
+                            <div id="slider1" class="slider-img">
+                                <img src="img/vinos.png" alt="">
+                            </div>
+                            <div id="slider2" class="slider-img slider-oculto1">
+                                <img src="img/Rones.png" alt="">
+                            </div>
+                            <div id="slider3" class="slider-img slider-oculto1">
+                                <img src="img/cervezas.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Seccion con los textos de la cabecera -->
+                    <div class="contenedor-texto-header">
+                        <div id="contenedor-titulo">
+                            <div id="img-titulo" class="logo-transparente">
+                                <img src="img/logo-vinoli-web.svg" alt="Vinoli">
+                            </div>
+                        </div>
+                        <div id="contenedor-resumen-nosotros">
+                            <div id="resumen-nosotros">
+                                <div>
+                                    <p id="parrafo-principal" class="oculto-izquierda" >SOMOS UNA EMPRESA DEDICADA A LAS VENTAS DE VINOS Y LICORES, ORIENTADOS A DAR EL
+                                        MEJOR
+                                        SERVICIO AL CLIENTE, CON ATENCIONES UNICAS DE SATISFACION.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Slider para el la version movil -->
+                        <div class="contenedor-slider-header slider-movil">
+                            <div id="contenedor-slider-img">
+                                <div id="slider-movil-1" class="slider-img">
+                                    <img src="img/vinos.png" alt="">
+                                </div>
+                                <div id="slider-movil-2" class="slider-img slider-oculto1">
+                                    <img src="img/Rones.png" alt="">
+                                </div>
+                                <div id="slider-movil-3" class="slider-img slider-oculto1">
+                                    <img src="img/cervezas.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Bloque con el boton de explorar y los iconos de la redes sociales -->
+        <div id="contenedor-explorar-redes">
+            <div id="explorar">
+                <a href="#nosotros">EXPLORA</a>
+                <div class="flecha-explorar"></div>
+            </div>
+            <!-- Redes sociales -->
+            <div id="contenedor-redes-sociales">
+                <a href="https://www.instagram.com/vinolird/">
+                    <div>
+                        <img src="img/instagram-50x50 copia.png" alt="">
+                    </div>
+                </a>
+                <a href="">
+                    <div>
+                        <img src="img/facebook-50x50 copia.png" alt="">
+                    </div>
+                </a>
+                <a href="">
+                    <div>
+                        <img src="img/twitter-50x50 copia.png" alt="">
+                    </div>
+                </a>
+            </div>
+        </div>
+    </header>
+    <!-- Secciones del sitio web -->
+    <section id="nosotros">
+        <div class="capa-oscura">
+            <div class="contenedor-texto-img">
+                <div class="nosotros-img">
+                    <div id="contenedor-img-nosotros" class="transparente"></div>
+                </div>
+                <div class="nosotros-texto">
+                    <div class="nosotros-titulo">
+                        <h1 id="nosotrosH1" class="transparente">NOSOTROS</h1>
+                    </div>
+                    <div class="parrafos">
+                        <P id="parrafo1" class="transparente">NUESTRA MISION ES DEJAR A CADA UNO DE NUESTROS CLIENTES PLENAMENTE SATISFECHOS.
+                        </P>
+                    </div>
+                    <div class="parrafos">
+                        <p id="parrafo2" class="transparente">NUESTRA VISION ES DAR AL CLIENTE LO QUE PENSABA OBTENER DE UNA LIQUOR STORE
+                            ADELANTANDONOS A SUS REQUISITOS.</p>
+                    </div>
+                    <div class="parrafos">
+                        <p id="parrafo3" class="transparente">NUESTROS VALORES ESTAN MARCADOS POR LA CALIDAD DE TODOS LOS PRODUCTOS QUE
+                            OFRECEMOS.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="diferencia">
+        <div class="capa-oscura2">
+            <div class="contenedor-texto-img">
+                <div class="diferencia-img">
+                    <div id="contenedor-img-diferencia" class="transparente">
+                        <img src="img/clouds-daylight-evening-51947.jpg" alt="">
+                    </div>
+                </div>
+                <div class="diferencia-texto">
+                    <div class="diferencia-titulo">
+                        <h1 id="diferenciaH1" class="transparente">¿QUÉ NOS DIFERENCIA?</h1>
+                    </div>
+                    <div class="parrafos">
+                        <p id="parrafo1-diferencia" class="transparente">OFRECEMOS LA MAS AMPLIA VARIEDAD EN VINOS DE DISTINTAS PROVINCIAS VINICOLAS,
+                            WISKYS, VODKA, RONES, TODOS DE ORDEN NACIONAL E INTERNACIONAL.</p>
+                    </div>
+                    <div class="parrafos">
+                        <P id="parrafo2-diferencia" class="transparente">NUESTRA MAS PROFUNDA DIFERENCIA ESTA REPRESENTADA POR NUESTRA EXCLUSIVIDAD EN
+                            ATENCION AL CLIENTE.</P>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contactanos">
+        <div class="capa-oscura3">
+            <div id="formulario-direccion">
+                <div class="direccion">
+                    <div class="contacto-titulo">
+                        <h1>UBÍCANOS <br> FACILMENTE</h1>
+                    </div>
+                    <div class="contenedor-datos">
+                        <div class="datos-telefono datos">
+                            <div class="img-datos"><img src="img/phone2.svg" alt=""></div>
+                            <div class="texto-mapa">
+                                <a href="tel:+18099083961"> +1 (809)-908-3961</a>
+                            </div>
+                        </div>
+                        <div class="datos-mapa datos">
+                            <div class="img-datos">
+                                <img src="img/mapa2.svg" alt="">
+                            </div>
+                            <div class="texto-mapa">
+                                Av. George Washington #662, <br> Santo Domingo 10100
+                            </div>
+                        </div>
+                        <div></div>
+                    </div>
+                </div>
+                <div class="formulario">
+                    <p class="titulo-formulario">Envíanos un email</p>
+                    <form action="enviar.php" method="POST">
+                        <!-- Formulario para correos electronicos -->
+                        <input type="text" name="nombre" required placeholder="Nombre completo">
+                        <input type="email" name="email" required placeholder="Email">
+                        <textarea name="descripcion" id="" cols="30" rows="10" required
+                            placeholder="Dejanos saber tu duda"></textarea>
+                        <button type="submit" class="btn">ENVIAR</button>
+                    </form>
+                </div>
+            </div>
+            <div id="mapa">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3784.608577565324!2d-69.91760388579681!3d18.456072975962236!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8ea563b21bfc7765%3A0x9dedcab941e12044!2sVINOLI!5e0!3m2!1sen!2sdo!4v1571581647914!5m2!1sen!2sdo"
+                    frameborder="0" style="border:0;" allowfullscreen="">
+                </iframe>
+            </div>
+        </div>
+    </section>
+    <!-- Pie de pagina -->
+    <footer>
+        <div>Todos los derechos reservados VINOLI <i class="far fa-copyright"></i> 2019</div>
+        <div>Web desarrollada por: <a href="https://julioweb.net"><b>Julioweb</b></a></div>
+    </footer>
+    <!-- Scripts del sitio -->
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>

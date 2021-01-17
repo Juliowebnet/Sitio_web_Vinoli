@@ -1,0 +1,1100 @@
+/* Estilos generales */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Baskerville Old Face;
+}
+
+header {
+    height: 100vh;
+    width: 100%;
+    background: url(../img/header.jpg);
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+}
+
+a, a:link {
+    text-decoration: none;
+    color: #FFF;
+}
+
+li {
+    list-style: none;
+}
+
+.contenedor-texto-img {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.capa-oscura {
+    height: 100%;
+    width: 100%;
+    /* background: rgba(0, 0, 0, 0.75); */
+    /* background: rgba(138, 8, 8, 0.75); */
+    background: #100f0f;
+    /* Old browsers */
+    background: -moz-linear-gradient(45deg, #100f0f 0%, rgba(190, 0, 0, 0.52) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(45deg, #100f0f 0%, rgba(190, 0, 0, 0.52) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(45deg, #100f0f 0%, rgba(190, 0, 0, 0.65) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#100f0f', endColorstr='rgba(190, 0, 0, 0.52)', GradientType=1);
+    /* IE6-9 fallback on horizontal gradient */
+}
+
+.capa-oscura2 {
+    height: 100%;
+    width: 100%;
+    /* background: rgba(0, 0, 0, 0.75); */
+    /* background: rgba(138, 8, 8, 0.75); */
+    background: #100f0f;
+    /* Old browsers */
+    background: -moz-linear-gradient(45deg, #100f0f 0%, rgba(24, 0, 0, 0.52) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(45deg, #100f0f 0%, rgba(24, 0, 0, 0.52) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(45deg, #100f0f 0%, rgba(24, 0, 0, 0.52) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#100f0f', endColorstr='rgba(190, 0, 0, 0.52)', GradientType=1);
+    /* IE6-9 fallback on horizontal gradient */
+}
+
+.capa-oscura3 {
+    height: 100%;
+    width: 100%;
+    /* background: rgba(0, 0, 0, 0.75); */
+    /* background: rgba(138, 8, 8, 0.75); */
+    background: #100f0f;
+    /* Old browsers */
+    background: -moz-linear-gradient(45deg, #100f0f 40%, rgba(190, 0, 0, 0.52) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(45deg, #100f0f 40%, rgba(190, 0, 0, 0.52) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(45deg, #100f0f 40%, rgba(190, 0, 0, 0.65) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#100f0f', endColorstr='rgba(190, 0, 0, 0.52)', GradientType=1);
+    /* IE6-9 fallback on horizontal gradient */
+}
+/* --------------------------------------------
+-----------------------------------------------
+------------------------------------------------------------------
+------------------------------------------------------------------ */
+/* Animacion de las imagenes de las secciones */
+.transparente{
+    opacity: 0;
+}
+.imagen-animada{
+    animation: imagen;
+    animation-duration: 500ms;
+}
+@keyframes imagen{
+    0%{
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+}
+/* --------------------------------------------
+-----------------------------------------------
+------------------------------------------------------------------
+------------------------------------------------------------------ */
+/* Animacion de los titulos */
+.titulo-animado{
+    animation: titulo;
+    animation-duration: 500ms;
+}
+@keyframes titulo{
+    0%{
+        opacity: 0;
+        transform: translateY(100px);
+    }
+}
+/* --------------------------------------------
+-----------------------------------------------
+------------------------------------------------------------------
+------------------------------------------------------------------ */
+/* Animacion de los parrafos de las secciones */
+.parrafo-animado1{
+    animation: parrafo;
+    animation-duration: 1s;
+    /* animation-delay: 100ms; */
+}
+.parrafo-animado2{
+    animation: parrafo2;
+    animation-duration: 1s;
+    /* animation-delay: 150ms; */
+}
+.parrafo-animado3{
+    animation: parrafo3;
+    animation-duration: 1s;
+    /* animation-delay: 200ms; */
+}
+@keyframes parrafo{
+    0%{
+        opacity: 0;
+        transform: translatex(500px);
+    }
+}
+@keyframes parrafo2{
+    0%{
+        opacity: 0;
+    }
+    30%{
+        opacity: 0;
+        transform: translatex(500px);
+    }
+}
+@keyframes parrafo3{
+    0%{
+        opacity: 0;
+    }
+    60%{
+        opacity: 0;
+        transform: translatex(500px);
+    }
+}
+
+
+/* Estilos del menu */
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 80%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    z-index: 50;
+}
+
+.icono-menu {
+    width: 50px;
+    height: 50px;
+    margin: 20px;
+    /* background: #100f0f;
+    border-radius: 50%; */
+}
+
+.icono-menu div {
+    margin: 20px auto;
+}
+
+.icono-menu div, .icono-menu div::before, .icono-menu div::after {
+    content: '';
+    display: block;
+    height: 3px;
+    width: 1.75em;
+    border-radius: 3px;
+    background: #fff;
+    transition: all ease-in-out 500ms;
+}
+
+.icono-menu div::before {
+    width: 1em;
+    transform: translateY(-6px);
+}
+
+.icono-menu div::after {
+    transform: translateY(3px);
+}
+
+.animar-nav div::before {
+    width: 1.75em;
+}
+
+.animar-nav div {
+    width: 1em;
+    ;
+}
+
+.animar-nav div::after {
+    width: 0.5em;
+}
+
+.cerrar-menu div {
+    transform: rotate(45deg);
+}
+
+.cerrar-menu div::before {
+    opacity: 0;
+}
+
+.cerrar-menu div::after {
+    transform: translateY(-3px) rotate(-90deg);
+}
+
+#contenedor-menu {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    overflow: hidden;
+}
+
+.ocultar-contenedor {
+    height: 0px;
+}
+
+.menu {
+    background: #100f0f;
+    /* background: #3B0B0B; */
+    transition: 500ms;
+    width: 250px;
+    margin-right: -100%;
+}
+
+.menu a {
+    color: #fff;
+}
+
+.menu li {
+    margin: 50px;
+    padding: 0 10px;
+    border-left: solid 2px #fff;
+    transition: 500ms;
+}
+
+.menu li:hover {
+    margin-left: 10px;
+}
+
+.menu .telefono {
+    margin: 20px 50px;
+}
+
+.mostrar-menu {
+    margin-right: 0;
+}
+
+/* fomdo de la cabecera */
+
+#fondo-header1 {
+    background: #100f0f;
+    /* Old browsers */
+    background: -moz-linear-gradient(45deg, #100f0f 0%, rgba(190, 0, 0, 0.52) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(45deg, #100f0f 0%, rgba(190, 0, 0, 0.52) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(45deg, #100f0f 0%, rgba(190, 0, 0, 0.65) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#100f0f', endColorstr='rgba(190, 0, 0, 0.52)', GradientType=1);
+    /* IE6-9 fallback on horizontal gradient */
+    height: 100%;
+    width: 100%;
+}
+
+/* ---------------------------------------------
+-----------------------------------------------
+----------------------------------------------- */
+
+/* Segunda capa del header */
+
+#fondo-header2 {
+    width: 100%;
+    height: 100%;
+    background: url(../img/fondo2.png);
+    background-size: 100% 100%;
+}
+
+/* ---------------------------------------------
+-----------------------------------------------
+----------------------------------------------- */
+
+/* Estilos para la seccion que tiene el slider del header */
+
+.contenedor-slider-header, .contenedor-texto-header {
+    height: 100%;
+    width: 45%;
+}
+
+.contenedor-slider-header {
+    display: flex;
+}
+
+/* Navegacion del slider */
+
+#contenedor-slider-nav {
+    height: 100%;
+    width: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider-nav {
+    height: 15px;
+    width: 15px;
+    margin: 10px 0;
+    border-radius: 50%;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider-nav:hover {
+    cursor: pointer;
+}
+
+.nav-activo {
+    height: 5px;
+    width: 5px;
+    border-radius: 50%;
+    background: #6E1717;
+}
+
+/* imagenes del slider */
+
+#contenedor-slider-img {
+    height: 100%;
+    width: 90%;
+    display: flex;
+    overflow: hidden;
+}
+
+#contenedor-slider-img img {
+    width: 100%;
+}
+
+#slider1{
+    width: 100%;
+    height: 100%;
+    transition: 500ms;
+}
+#slider-movil-1{
+    width: 100%;
+    height: 100%;
+    transition: 500ms;
+
+}
+
+#slider2{
+    width: 100%;
+    height: 100%;
+    transition: 500ms;
+}
+#slider-movil-2{
+    width: 100%;
+    height: 100%;
+    transition: 500ms;
+}
+
+#slider3{
+    width: 100%;
+    height: 100%;
+    transition: 500ms;
+}
+#slider-movil-3{
+    width: 100%;
+    height: 100%;
+    transition: 500ms;
+}
+
+.slider-oculto1 {
+    margin-right: -100%;
+}
+
+.slider-oculto2 {
+    margin-left: -100%;
+}
+
+.slider-movil {
+    display: none;
+}
+
+/* ---------------------------------------------
+-----------------------------------------------
+----------------------------------------------- */
+
+/* Estilos para la seccion de los textos en el header */
+
+.contenedor-texto-header {
+    color: #fff;
+}
+
+#contenedor-titulo, #contenedor-resumen-nosotros {
+    display: flex;
+    justify-content: center;
+}
+
+#contenedor-titulo {
+    height: 50%;
+    /* align-items: flex-end; */
+}
+
+#img-titulo {
+    width: 100%;
+    height: 100%;
+    transition: 1.5s;
+}
+
+#img-titulo img {
+    width: 100%;
+    height: 100%;
+}
+
+#contenedor-resumen-nosotros {
+    height: 50%;
+    font-size: 1.2em;
+    text-align: justify;
+}
+
+#resumen-nosotros {
+    margin: 20px 0;
+    padding: 0 50px;
+}
+
+#resumen-nosotros div {
+    border-left: solid 2px #fff;
+    padding-left: 20px;
+    overflow: hidden;
+}
+
+#parrafo-principal {
+    transition: 1.5s;
+}
+
+.oculto-izquierda {
+    margin-left: -700%;
+}
+
+.logo-transparente {
+    opacity: 0;
+}
+
+/* ---------------------------------------------
+-----------------------------------------------
+----------------------------------------------- */
+
+/* estilos redes enlaces sociales y boton de exploracion */
+
+#contenedor-explorar-redes {
+    color: #fff;
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    top: 90%;
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+    grid-template-rows: 100%;
+}
+
+#explorar {
+    grid-column: 2 / 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#explorar a {
+    width: 100%;
+    margin: 7px 0;
+    text-align: center;
+    text-decoration: none;
+    color: #6E1717;
+    animation-name: explora;
+    animation-duration: 600ms;
+    animation-iteration-count: infinite;
+}
+
+#explorar a:link {
+    text-decoration: none;
+    color: #6E1717
+}
+
+#explorar a:hover {
+    color: #6E1717;
+}
+
+.flecha-explorar {
+    width: 0;
+    height: 0;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-top: 14px solid #6E1717;
+}
+
+#contenedor-redes-sociales {
+    grid-column: 3/4;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 15px;
+    margin-right: 15px;
+    /* position: fixed; */
+}
+
+#contenedor-redes-sociales a div {
+    margin: 0 5px;
+    transition: 500ms;
+}
+
+#contenedor-redes-sociales a div:hover {
+    margin-bottom: 30px;
+}
+
+#contenedor-redes-sociales a div img {
+    width: 25px;
+}
+
+/* Animacion para el boton de explorar */
+
+@keyframes explora {
+    0% {
+        margin-bottom: 0;
+    }
+    12% {
+        margin-bottom: 2px;
+    }
+    25% {
+        margin-bottom: 5px;
+    }
+    37% {
+        margin-bottom: 8px;
+    }
+    50% {
+        margin-bottom: 10px;
+    }
+    62% {
+        margin-bottom: 8px;
+    }
+    75% {
+        margin-bottom: 5px;
+    }
+    87% {
+        margin-bottom: 2px;
+    }
+    100% {
+        margin-bottom: 0;
+    }
+}
+
+/* ---------------------------------------------
+-----------------------------------------------
+----------------------------------------------- */
+
+/* estilos para la seccion de nosotros */
+
+#nosotros {
+    height: 100vh;
+    width: 100%;
+    background: url(../img/bar-1846137_1920.jpg);
+    background-size: cover;
+    /* margin: 30px 0; */
+}
+
+.nosotros-img, .nosotros-texto {
+    width: 50%;
+    height: 100%;
+}
+
+.nosotros-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.nosotros-img div {
+    border-radius: 50%;
+    width: 400px;
+    height: 400px;
+    background: url(../img/girl-1064664_1920.jpg);
+    background-size: cover;
+    background-position: -120px;
+    /* border: solid 2px #fff; */
+}
+
+.nosotros-texto {
+    color: #fff;
+}
+
+.nosotros-titulo {
+    font-size: 4em;
+    text-align: center;
+    margin: 60px 0 50px 0;
+    overflow: hidden;
+}
+#nosotrosH1{
+    transition: 500ms;
+}
+
+.parrafos {
+    margin: 30px 0;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    font-size: 1.2em;
+    overflow: hidden;
+}
+
+.parrafos p {
+    border-left: solid 2px #fff;
+    padding: 10px;
+}
+
+#parrafo1 {
+    margin-left: 150px;
+}
+
+#parrafo2 {
+    margin-left: 80px;
+}
+
+#parrafo3 {
+    margin-left: 10px;
+}
+
+/* ---------------------------------------------
+-----------------------------------------------
+----------------------------------------------- */
+
+/* estilos para la seccion de lo que nos diferencia */
+
+#diferencia {
+    height: 100vh;
+    width: 100%;
+    background: url(../img/clouds-daylight-evening-51947.jpg);
+    background-size: cover;
+}
+
+.diferencia-img, .diferencia-texto {
+    width: 50%;
+    height: 100%;
+}
+
+.diferencia-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.diferencia-img div {
+    border-radius: 50%;
+    width: 400px;
+    height: 400px;
+    /* background: url(../img/clouds-daylight-evening-51947.jpg);
+    background-size: cover;
+    background-position: -120px; */
+    overflow: hidden;
+}
+
+.diferencia-img div img {
+    width: 100%;
+    height: 100%;
+}
+
+.diferencia-texto {
+    color: #fff;
+}
+
+.diferencia-titulo {
+    font-size: 2.5em;
+    text-align: left;
+    margin: 60px 0 50px 0;
+    padding: 0 40px;
+    overflow: hidden;
+}
+#parrafo1-diferencia {
+    margin-left: 150px;
+}
+
+#parrafo2-diferencia {
+    margin-left: 80px;
+}
+
+/* ---------------------------------------------
+-----------------------------------------------
+----------------------------------------------- */
+
+/* estilos para la seccion de contáctanos */
+
+#contactanos {
+    width: 100%;
+}
+
+#formulario-direccion {
+    width: 100%;
+    /* height: 300px; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    color: #FFF;
+    margin-bottom: 30px;
+}
+
+.formulario {
+    width: 50%;
+    font-size: 1.5em;
+    padding-top: 30px;
+}
+
+.formulario input, .formulario label, .formulario textarea, .btn {
+    width: 70%;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: none;
+}
+
+.formulario input {
+    padding-left: 10px;
+}
+
+.formulario input {
+    height: 30px;
+}
+
+.formulario textarea {
+    padding: 10px 0 0 10px;
+}
+
+.btn {
+    background: #6E1717;
+    color: #FFF;
+    height: 30px;
+    margin-left: 5px;
+}
+
+.direccion {
+    padding-top: 30px;
+    /* width: 50%; */
+}
+
+.contacto-titulo {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.contenedor-datos {
+    margin: 40px;
+    font-size: 1.2em;
+}
+
+.datos {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.img-datos {
+    width: 70px;
+    height: 70px;
+    margin-right: 15px;
+}
+
+#mapa iframe {
+    width: 100%;
+    height: 500px;
+}
+
+/* ---------------------------------------------
+-----------------------------------------------
+----------------------------------------------- */
+
+/* Estilos para el footer */
+
+footer {
+    height: 50px;
+    width: 100%;
+    /* background: #161616; */
+    color: #bfbfbf;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background: #100f0f;
+    /* Old browsers */
+    background: -moz-linear-gradient(45deg, #100f0f 0%, rgba(24, 0, 0, 0.52) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(45deg, #100f0f 0%, rgba(24, 0, 0, 0.52) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(45deg, #100f0f 0%, rgba(24, 0, 0, 0.52) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#100f0f', endColorstr='rgba(190, 0, 0, 0.52)', GradientType=1);
+    /* IE6-9 fallback on horizontal gradient */
+}
+
+footer div {
+    margin: 0 20px;
+}
+
+footer a {
+    color: #FFF;
+    margin-left: 5px;
+}
+/* ----------------------------------------------
+----------------------------------------------------
+----------------------------------------------------
+-----------------------------------------------------
+Estilos para resoluciones hasta 850px */
+
+@media only screen and (max-width: 850px){
+    /* nav */
+    nav{
+        display: none;
+    }
+    /* seccion header */
+    #contenedor-resumen-nosotros {
+        height: 50%;
+        font-size: 0.7em;
+        text-align: justify;
+    }
+    #contenedor-explorar-redes {
+        height: 50px;
+        top: 85%;
+    }
+    #explorar{
+        display: none;
+    }
+    /* seccion nosotros */
+    #nosotros {
+        height: 100%;
+    }
+    .nosotros-img div {
+        width: 300px;
+        height: 300px;
+        background-position: -120px;
+    }
+    .nosotros-titulo {
+        font-size: 2em;
+    }
+    .parrafos {
+        font-size: 0.7em;
+    }
+    #parrafo1 {
+        margin-left: 10px;
+    }
+    #parrafo2 {
+        margin-left: 10px;
+    }
+    #parrafo3 {
+        margin-left: 10px;
+    }
+    /* Seccion diferencia */
+    #diferencia {
+        height: 100%;
+    }
+    .diferencia-img div {
+        width: 300px;
+        height: 300px;
+    }
+    .diferencia-titulo {
+        font-size: 1.7em;
+        text-align: left;
+        margin: 60px 0 50px 0;
+        padding: 0 40px;
+        overflow: hidden;
+    }
+    #parrafo1-diferencia {
+        margin-left: 10px;
+    }
+    #parrafo2-diferencia {
+        margin-left: 10px;
+    }
+    /* Seccion contáctanos */
+    .formulario {
+        width: 40%;
+        font-size: 0.7em;
+    }
+    .formulario input, .formulario label, .formulario textarea, .btn {
+        width: 90%;
+    }
+    .direccion {
+        padding-top: 30px;
+    }
+    
+    .contacto-titulo {
+        font-size: 1.7em;
+    }
+    .contenedor-datos {
+        margin: 10px;
+        font-size: 0.7em;
+    }
+    .img-datos {
+        width: 50px;
+        height: 50px;
+        margin-right: 10px;
+    }
+    /* Seccion footer */
+    footer{
+        font-size: 0.7em;
+    }
+}
+/* ---------------------------------------------
+-----------------------------------------------
+----------------------------------------------- */
+
+/* Estilos para la version movil */
+
+@media only screen and (max-width: 600px) {
+    /* Menu */
+    nav{
+        display: flex;
+    }
+    .menu{
+        width: 100%;
+    }
+    /* Redes sociales */
+    #contenedor-explorar-redes {
+        height: 50px;
+        top: 85%;
+    }
+    #contenedor-redes-sociales {
+        grid-column: 2/3;
+    }
+    /* Cabecera */
+    #fondo-header2 {
+        background: transparent;
+    }
+    .contenedor-slider-header, .contenedor-texto-header {
+        width: 100%;
+    }
+    .contenedor-slider-header{
+        justify-content: center;
+    }
+    .slider-desktop, #explorar, #contenedor-resumen-nosotros {
+        display: none;
+    }
+    #contenedor-titulo{
+        height: 30%;
+    }
+    #contenedor-slider-img {
+        width: 90%;
+        height: 60%;
+    }
+    .slider-movil{
+        display: flex;
+        justify-content: center;
+    }
+    /* Seccion de nosotros */
+    #nosotros {
+        height: 100%;
+        width: 100%;
+    }
+    .contenedor-texto-img {
+        flex-wrap: wrap;
+    }
+    .nosotros-img, .nosotros-texto {
+        width: 100%;
+        height: 50%;
+        margin: 20px 0 40px 0;
+    }
+    .nosotros-img{
+        margin: 40px 0;
+    }
+    .nosotros-texto{
+        margin: 0px 0 40px 0;
+    }
+    .nosotros-img div {
+        width: 250px;
+        height: 250px;
+        background-position: -90px;
+    }
+    .nosotros-titulo {
+        font-size: 2em;
+        text-align: center;
+        margin: 10px 0 10px 0;
+    }
+    
+    .parrafos {
+        margin: 20px 0;
+        display: flex;
+        align-items: center;
+        padding: 0 20px;
+        font-size: 1em;
+    }
+    #parrafo1 {
+        margin-left: 30px;
+    }
+    
+    #parrafo2 {
+        margin-left: 30px;
+    }
+    
+    #parrafo3 {
+        margin-left: 30px;
+    }
+    /* Seccion de diferencia */
+    #diferencia {
+        height: 100%;
+        width: 100%;
+    }
+    .diferencia-img, .diferencia-texto {
+        width: 100%;
+        height: 50%;
+    }
+    .diferencia-img{
+        margin: 40px 0;
+    }
+    .diferencia-texto{
+        margin: 0px 0 40px 0;
+    }
+    .diferencia-img div {
+        width: 250px;
+        height: 250px;
+    }
+    .diferencia-titulo {
+        font-size: 2em;
+        text-align: center;
+        margin: 10px 0 30px 0;
+        padding: 0 40px;
+    }
+    #parrafo1-diferencia {
+        margin-left: 30px;
+    }
+    
+    #parrafo2-diferencia {
+        margin-left: 30px;
+    }
+    /* seccion de contáctanos */
+    #contactanos {
+        width: 100%;
+    }
+    
+    #formulario-direccion {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        color: #FFF;
+        margin-bottom: 30px;
+    }
+    
+    .formulario {
+        width: 100%;
+        font-size: 1.5em;
+        padding: 30px;
+        text-align: center;
+    }
+    
+    .formulario input, .formulario label, .formulario textarea, .btn {
+        width: 100%;
+    }
+    .contacto-titulo {
+        font-size: 2em;
+        text-align: center;
+    }
+    /* seccion del footer */
+    footer{
+        font-size: 0.7em;
+    }
+    footer div{
+        width: 100%;
+        text-align: center;
+    }
+}
+
